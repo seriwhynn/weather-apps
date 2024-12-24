@@ -1,0 +1,173 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #fdb243, #8e9c96);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Title */
+.card .app-name {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Search Section */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search button img {
+    width: 16px;
+}
+
+/* Weather Information */
+.weather-icon {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.temp {
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.city {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: -5px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 30px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.col img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.col div {
+    text-align: left;
+}
+
+.humidity, .wind {
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ff4444;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .card {
+        padding: 30px 15px;
+    }
+
+    .search input {
+        padding: 8px 15px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .search button {
+        width: 45px;
+        height: 45px;
+    }
+
+    .weather-icon {
+        width: 80px;
+    }
+
+    .temp {
+        font-size: 50px;
+    }
+
+    .city {
+        font-size: 20px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .col img {
+        width: 25px;
+    }
+
+    .humidity, .wind {
+        font-size: 18px;
+    }
+}
